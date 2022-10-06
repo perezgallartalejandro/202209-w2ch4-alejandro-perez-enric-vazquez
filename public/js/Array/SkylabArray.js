@@ -1,0 +1,3 @@
+class SkylabArray {
+  length;
+}
