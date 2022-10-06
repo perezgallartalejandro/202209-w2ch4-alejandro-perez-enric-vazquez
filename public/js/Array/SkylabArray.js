@@ -11,6 +11,12 @@ class SkylabArray {
 
     this.length = counter;
   }
+
+  push(newArrayElement) {
+    this[this.length] = newArrayElement;
+    this.length += 1;
+    return this;
+  }
 }
 
 export default SkylabArray;
