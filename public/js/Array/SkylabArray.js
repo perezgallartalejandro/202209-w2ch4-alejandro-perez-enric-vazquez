@@ -15,6 +15,7 @@ class SkylabArray {
   push(newArrayElement) {
     this[this.length] = newArrayElement;
     this.length += 1;
+    return this;
   }
 }
 
