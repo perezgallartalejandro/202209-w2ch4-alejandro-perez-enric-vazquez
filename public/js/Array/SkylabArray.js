@@ -6,7 +6,7 @@ class SkylabArray {
 
     for (const arrayElement of arrayElements) {
       this[counter] = arrayElement;
-      counter += 1;
+      counter++;
     }
 
     this.length = counter;
@@ -14,8 +14,7 @@ class SkylabArray {
 
   push(newArrayElement) {
     this[this.length] = newArrayElement;
-    this.length += 1;
-    return this;
+    return ++this.length;
   }
 }
 
