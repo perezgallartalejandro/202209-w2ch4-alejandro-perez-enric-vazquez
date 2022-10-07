@@ -2,14 +2,10 @@ class SkylabArray {
   length;
 
   constructor(...arrayElements) {
-    let counter = 0;
-
-    for (const arrayElement of arrayElements) {
-      this[counter] = arrayElement;
-      counter += 1;
-    }
-
-    this.length = counter;
+    arrayElements.forEach((arrayElement, arrayIndex) => {
+      this[arrayIndex] = arrayElement;
+      this.length = arrayIndex + 1;
+    });
   }
 
   push(newArrayElement) {
