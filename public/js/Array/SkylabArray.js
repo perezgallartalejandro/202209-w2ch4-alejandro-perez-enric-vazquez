@@ -6,16 +6,15 @@ class SkylabArray {
 
     for (const arrayElement of arrayElements) {
       this[counter] = arrayElement;
-      counter += 1;
+      counter++;
     }
 
     this.length = counter;
   }
 
   push(newArrayElement) {
-    this[this.length] = newArrayElement;
-    this.length += 1;
-    return this;
+    this[this.length++] = newArrayElement;
+    return this.length;
   }
 }
 
