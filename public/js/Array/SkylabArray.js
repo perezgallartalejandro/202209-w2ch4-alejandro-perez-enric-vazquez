@@ -13,8 +13,8 @@ class SkylabArray {
   }
 
   push(newArrayElement) {
-    this[this.length] = newArrayElement;
-    return ++this.length;
+    this[this.length++] = newArrayElement;
+    return this.length;
   }
 }
 
